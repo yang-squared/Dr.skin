@@ -1,0 +1,162 @@
+<head>
+    <meta charset="UTF-8">
+    <title>닥터스킨(Dr.skin) | 피부암 자가진단 어플리케이션</title>
+	<style>
+       
+	</style>
+	  <body bgcolor='#1967cc'>
+	  </body>
+</head>
+{% block content %}
+
+{% if message and message != "" %}
+    <script type="text/javascript" language="JavaScript">
+        alert("{{ message }}");
+    </script>
+{% endif %}
+
+
+<div id="ctn_admin">
+	<div style="background-color: #1967cc">
+
+	<form action="/" method="post" enctype="multipart/form-data">
+
+		<table align="center" class="ctn" width="800">
+
+			<tr>
+				<td align="center">
+					<br><br>
+				</td>
+			</tr>
+
+
+			<tr>
+				<center>
+					<div style = "padding: 100px 0px 0px 0px;"> <!-- (각각 위 오른쪽 아래 왼쪽 - 시계방향) --> 
+						<img src="{{ url_for('static', filename='img/WebTitle.png') }}"></iframe>
+					</div>
+                </center>
+			</tr>
+
+
+			<tr>
+				<td align="center">
+			<br>
+				</td>
+			</tr>
+
+			<!------------------------------------- File Upload ------------------------------------------>
+			<tr>
+				<td>
+				</td>
+                <center>
+                <img src="{{ url_for('static', filename='img/plzupload.png') }}"></iframe>
+                <br>
+                </center>
+			</tr>
+
+			<tr>
+				<center>
+					<input type="file" class="txtform" name="up_file" style='display: none;' value="파일 불러오기"/> 
+					<input type='text' name='file2' id='file2' style='display: none;'> 
+					<img src="{{ url_for('static', filename='img/slimg.png') }}" border='0' onclick='document.all.up_file.click(); document.all.file2.value=document.all.up_file.value'>
+
+					<input type="submit" class="mastering" name="action_type" style='display: none;' value="파일업로드"/>
+					<input type='text' name='file2' id='file2' style='display: none;'> 
+					<img src="{{ url_for('static', filename='img/upimg.png') }}" border='0' onclick='document.all.action_type.click(); document.all.file2.value=document.all.action_type.value'>
+				</center>
+			</tr>
+			{% if up_filepath and up_filepath != "" %}
+
+					<center>
+					<input type="hidden" name="up_filepath" value="{{ up_filepath }}"/>
+				</center>
+
+			<tr>
+				<td align="center">
+					<img src="{{ url_for('static', filename='img/uploadedimg.png') }}"><br>
+						<img src="{{ up_filepath }}" width="400">
+				</td>
+			</tr>
+			{% endif %}
+
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+			<!------------------------------------- Classification ------------------------------------------>
+
+			{% if up_filepath and up_filepath != "" %}
+			<tr align="center">
+				<td align="center">
+					<form name="form">
+						<div style="overflow:hidden; width:441px; height:115px; background-image:url('https://drive.google.com/uc?export=download&id=18sU2GfCW6FCulm2VWvv6wQGmXXT5YkI0');text-align:center">
+							<input type="submit" class="mastering" name="action_type" style="width:441px;height:115px;margin:0px;filter:alpha(opacity=0);opacity:0;cursor:pointer;" value="분석하기"/>
+						</div>
+					</form>
+				</td>
+			</tr>
+			{% endif %}
+
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+			{% if heatmap_path and heatmap_path != "" %}
+			<tr>
+				<td align="center">
+					<input type="hidden" name="heatmap_path" value="{{ heatmap_path }}"/>
+					<!-- {{ heatmap_path }} -->
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+					<img src="{{ heatmap_path }}" width="400">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+					<br>
+					<img src="{{ url_for('static', filename='img/yours.png') }}"><br><br>
+				<font size="18px" color="#ffffff">
+					{{ predict_class }}
+				</font>
+				</td>
+			</tr>
+			{% endif %}
+
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+			<!------------------------------------- File Download ------------------------------------------>
+
+			{% if heatmap_path and heatmap_path != "" %}
+			<!--tr align="center">
+				<td align="center">
+					<input type="submit" class="mastering" name="action_type" value="파일다운로드"/>
+				</td>
+			</tr-->
+			{% endif %}
+
+		</table>
+
+	</form>
+
+</div>
+<center>
+	<!------------------------------------- Button ------------------------------------------>
+<a href="http://222.118.197.112:5008/"> <img src="{{ url_for('static', filename='img/refresh.png') }}"/></a>
+<a href="http://222.118.197.112:8080/Drskin/?device=mobile"> <img src="{{ url_for('static', filename='img/gohome.png') }}"/></a>
+</center>
+<br><br>
+{% endblock %}
+

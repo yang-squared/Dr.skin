@@ -1,0 +1,6 @@
+{
+  "server_ip": "192.168.0.123",
+  "port": 5008,
+  "model_path": "./models/skincancer_classifier_2cls.pt",
+  "labels": ["악성흑색종", "양성모반"]
+}

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frag2home"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e9e9f3"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/frag1header"
+            android:scaleType="fitXY"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#ffffff"></View>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#b9b9c1"
+            app:srcCompat="@drawable/frag1home"
+            android:scaleType="fitXY"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#ffffff"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/round"
+                android:padding="5dp"
+                android:src="@drawable/josun"></ImageView>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="318dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:bufferType="spannable"
+                android:onClick="OnclickHandler"
+                android:text="피부암\n헬스조선\n피부암 막으려면 ‘이렇게’ 하세요"
+                android:gravity="center"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/round"
+                android:padding="6dp"
+                android:src="@drawable/art1"></ImageView>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="318dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:bufferType="spannable"
+                android:onClick="OnclickHandler"
+                android:text="피부병\n헬스코리아뉴스\n피부병 환자 타깃 신약개발 열기 후끈"
+                android:gravity="center"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/round"
+                android:padding="6dp"
+                android:src="@drawable/art2"></ImageView>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="318dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:bufferType="spannable"
+                android:onClick="OnclickHandler"
+                android:text="피부병\n코메디닷컴\n땀이 줄줄 흐르는 여름철…요주의 피부병 3"
+                android:gravity="center"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_gravity="bottom">
+        </View>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#b9b9c1"
+            app:srcCompat="@drawable/frag1medical"
+            android:scaleType="fitXY"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_gravity="bottom">
+        </View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/round"
+                android:padding="6dp"
+                android:src="@drawable/art3"></ImageView>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="318dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:bufferType="spannable"
+                android:onClick="OnclickHandler"
+                android:text="혈압\n코메디닷컴\n혈압 조절 돕는 음식 7가지"
+                android:gravity="center"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/round"
+                android:padding="5dp"
+                android:src="@drawable/art4"></ImageView>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="318dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:bufferType="spannable"
+                android:onClick="OnclickHandler"
+                android:text="피부병\n중부일보\n'햇빛 알레르기' 자외선 차단제로 예방"
+                android:gravity="center"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/round"
+                android:padding="6dp"
+                android:src="@drawable/art5"></ImageView>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="318dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:bufferType="spannable"
+                android:onClick="OnclickHandler"
+                android:text="장수\n사이언스타임즈\n‘간헐적 단식’하면 건강하고 장수한다?"
+                android:gravity="center"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <ViewFlipper
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+</ScrollView>

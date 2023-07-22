@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/actfirst"
+    tools:context=".first">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="347dp"
+        android:layout_height="218dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/asan" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="345dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="이미지를 클릭하시면 보다 자세히 확인하실 수 있습니다."
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

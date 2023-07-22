@@ -1,0 +1,162 @@
+
+
+{% block content %}
+
+{% if message and message != "" %}
+    <script type="text/javascript" language="JavaScript">
+        alert("{{ message }}");
+    </script>
+{% endif %}
+
+
+
+<div id="ctn_admin">
+
+
+	<form action="/" method="post" enctype="multipart/form-data">
+
+		<table align="center" class="ctn" width="800">
+
+			<tr>
+				<td align="center">
+					<br><br>
+				</td>
+			</tr>
+
+
+			<tr>
+				<center>
+                                                       <img src="https://drive.google.com/uc?export=download&id=1dFb8U5YgDnuKJ7VZjLdmd4-bCGSi22BI"></iframe>
+                                                </center>
+			</tr>
+
+
+			<tr>
+				<td align="center">
+			<br>
+				</td>
+			</tr>
+
+			<!------------------------------------- File Upload ------------------------------------------>
+			<tr>
+				<td>
+				</td>
+                                                 <center>
+                                                       <img src="https://drive.google.com/uc?export=download&id=1SJsEktswBR-3UTqOVrUdofqZ0Afb7fc4"></iframe>
+                                                <br>
+                                                </center>
+			</tr>
+
+			<tr>
+				<td></td>
+                                                            <center>
+					<input type="file" class="txtform" name="up_file" style='display: none;' value="파일 불러오기"/> 
+                                                            <input type='text' name='file2' id='file2' style='display: none;'> 
+                                                            <img src='https://drive.google.com/uc?export=download&id=1DvtQq7pgecEySDRkPiuaQIoLoOc9ValZ' border='0' onclick='document.all.up_file.click(); document.all.file2.value=document.all.up_file.value'>
+                                                            </center> 
+				<td></td>
+                                                <center>
+                                                            <input type="submit" class="mastering" name="action_type" style='display: none;' value="파일업로드"/>
+                                                            <input type='text' name='file2' id='file2' style='display: none;'> 
+                                                            <img src='https://drive.google.com/uc?export=download&id=1OM5UyWzKOYT0vKhG6Y3e3EwUvMArWdL3' border='0' onclick='document.all.action_type.click(); document.all.file2.value=document.all.action_type.value'>
+                                                </center> 
+			</tr>
+
+			<tr>
+				<td>
+				</td>
+			</tr>
+
+			{% if up_filepath and up_filepath != "" %}
+			<tr>
+				<td>
+                                                <center>
+					업로드된 파일:
+					<input type="hidden" name="up_filepath" value="{{ up_filepath }}"/>
+					{{ up_filepath }} </center>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+					<img src="{{ up_filepath }}" width="400">
+				</td>
+			</tr>
+			{% endif %}
+
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+			<!------------------------------------- Classification ------------------------------------------>
+
+			{% if up_filepath and up_filepath != "" %}
+			<tr align="center">
+				<td align="center">
+<form name="form">
+<div style="overflow:hidden; width:441px; height:115px; background-image:url('https://drive.google.com/uc?export=download&id=18sU2GfCW6FCulm2VWvv6wQGmXXT5YkI0');text-align:center">
+<input type="submit" class="mastering" name="action_type" style="width:441px;height:115px;margin:0px;filter:alpha(opacity=0);opacity:0;cursor:pointer;" value="분석하기"/>
+</div>
+</form>
+                                                            <input type="submit" class="mastering" name="action_type" style='display: none;' value="분석하기"/>
+                                                            <input type='text' name='file2' id='file2' style='display: none;'> 
+                                                            <img src='https://drive.google.com/uc?export=download&id=18sU2GfCW6FCulm2VWvv6wQGmXXT5YkI0' border='0' onclick='document.all.action_type.click(); document.all.file2.value=document.all.action_type.value'>
+
+				</td>
+			</tr>
+			{% endif %}
+
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+			{% if heatmap_path and heatmap_path != "" %}
+			<tr>
+				<td align="center">
+					<input type="hidden" name="heatmap_path" value="{{ heatmap_path }}"/>
+					<!-- {{ heatmap_path }} -->
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+					<img src="{{ heatmap_path }}" width="400">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+					{{ predict_class }}
+				</td>
+			</tr>
+			{% endif %}
+
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+			<!------------------------------------- File Download ------------------------------------------>
+
+			{% if heatmap_path and heatmap_path != "" %}
+			<!--tr align="center">
+				<td align="center">
+					<input type="submit" class="mastering" name="action_type" value="파일다운로드"/>
+				</td>
+			</tr-->
+			{% endif %}
+
+		</table>
+
+	</form>
+
+</div>
+
+
+{% endblock %}
+

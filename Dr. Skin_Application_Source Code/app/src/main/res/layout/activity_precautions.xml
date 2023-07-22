@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1966cc"
+    android:orientation="vertical"
+    tools:context=".Precautions">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        app:srcCompat="@drawable/applogo" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="\n"/>
+
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="355dp"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:textAlignment="center"
+        android:text="\n\n\n\n\n해당 정보는 Dr.Skin 애플리케이션의 \n회원 가입 내역에 대한 동의서 입니다.\n\n
+        1. 개인 식별을 위해 이름, 나이 정보를 필요로 합니다.
+        \n해당 정보는 본인 인증 이외의 용도로 사용되지 않습니다.\n
+        \n2. 작성하신 내용은 Dr.Skin 서버에 저장됩니다.\n\n3. 본 어플리케이션을 맹신하여 받은 피해는 책임지지 않습니다.
+\n\n"
+        android:textStyle="bold"
+        android:textColor="#525252" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="\n\n\n주의사항을 신중하게 읽어보신 뒤, 동의하기 버튼을 눌러주세요"
+        android:layout_gravity="center"></TextView>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="\n"/>
+    <Button
+        android:id="@+id/move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="동의하기"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:backgroundTint="#3181ff"></Button>
+
+
+</LinearLayout>

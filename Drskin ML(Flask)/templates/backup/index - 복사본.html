@@ -1,0 +1,147 @@
+
+
+{% block content %}
+
+{% if message and message != "" %}
+    <script type="text/javascript" language="JavaScript">
+        alert("{{ message }}");
+    </script>
+{% endif %}
+
+
+
+<div id="ctn_admin">
+
+
+	<form action="/" method="post" enctype="multipart/form-data">
+
+		<table align="center" class="ctn" width="800">
+
+			<tr>
+				<td align="center">
+					<br><br>
+				</td>
+			</tr>
+
+
+			<tr>
+				<center>
+                                                       <img src="https://drive.google.com/uc?export=download&id=1dFb8U5YgDnuKJ7VZjLdmd4-bCGSi22BI"></iframe>
+                                                </center>
+			</tr>
+
+
+			<tr>
+				<td align="center">
+			<br>
+				</td>
+			</tr>
+
+			<!------------------------------------- File Upload ------------------------------------------>
+			<tr>
+				<td>
+				</td>
+                                                 <center>
+                                                       <img src="https://drive.google.com/uc?export=download&id=1SJsEktswBR-3UTqOVrUdofqZ0Afb7fc4"></iframe>
+                                                </center>
+			</tr>
+
+			<tr>
+				<td width="80%">
+					<input type="file" class="txtform" name="up_file" value="파일 불러오기">
+				</td>
+				<td align="right">
+					<input type="submit" class="mastering" name="action_type" value="파일업로드"/>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+			{% if up_filepath and up_filepath != "" %}
+			<tr>
+				<td>
+					업로드된 파일:
+					<input type="hidden" name="up_filepath" value="{{ up_filepath }}"/>
+					{{ up_filepath }}
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+					<img src="{{ up_filepath }}" width="400">
+				</td>
+			</tr>
+			{% endif %}
+
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+			<!------------------------------------- Classification ------------------------------------------>
+
+			{% if up_filepath and up_filepath != "" %}
+			<tr align="center">
+				<td align="center">
+					<input type="submit" class="mastering" name="action_type" value="분석하기"/>
+				</td>
+			</tr>
+			{% endif %}
+
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+			{% if heatmap_path and heatmap_path != "" %}
+			<tr>
+				<td align="center">
+					<input type="hidden" name="heatmap_path" value="{{ heatmap_path }}"/>
+					<!-- {{ heatmap_path }} -->
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+					<img src="{{ heatmap_path }}" width="400">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center">
+					{{ predict_class }}
+				</td>
+			</tr>
+			{% endif %}
+
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+			<!------------------------------------- File Download ------------------------------------------>
+
+			{% if heatmap_path and heatmap_path != "" %}
+			<!--tr align="center">
+				<td align="center">
+					<input type="submit" class="mastering" name="action_type" value="파일다운로드"/>
+				</td>
+			</tr-->
+			{% endif %}
+
+		</table>
+
+	</form>
+
+</div>
+
+
+{% endblock %}
+

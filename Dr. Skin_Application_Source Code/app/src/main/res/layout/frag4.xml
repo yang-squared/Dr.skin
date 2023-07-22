@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e9e9f3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/frag3header"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#e9e9f3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/hospital_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#e9e9f3"
+                android:textColor="#525252"
+                android:textStyle="bold"
+                android:text="병원 검색하기" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#525252"
+            android:layout_gravity="bottom"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_gravity="left">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="5dp"
+                        android:src="@drawable/rank1"></ImageView>
+
+                   <Button
+                      android:id="@+id/button1"
+                       android:layout_width="382dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#00ff0000"
+                        android:backgroundTint="@color/white"
+                        android:bufferType="spannable"
+                         android:text="경희 의료원\n 서울특별시 동대문구 경희대로 23"
+                        android:textColor="#878181" />
+                  </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#D2D5D8"
+                    android:layout_gravity="bottom"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="left">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="5dp"
+                        android:src="@drawable/rank2"></ImageView>
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="382dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#00ff0000"
+                        android:backgroundTint="@color/white"
+                        android:bufferType="spannable"
+                        android:text="삼성서울병원\n 서울특별시 강남구 일원로 81"
+                        android:textColor="#878181" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#D2D5D8"
+                    android:layout_gravity="bottom"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="left">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="5dp"
+                        android:src="@drawable/rank3"></ImageView>
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="382dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#00ff0000"
+                        android:backgroundTint="@color/white"
+                        android:bufferType="spannable"
+                        android:text="서울아산병원\n 서울특별시 송파구 올림픽로 43길 88"
+                        android:textColor="#878181" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#D2D5D8"
+                    android:layout_gravity="bottom"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="left">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="5dp"
+                        android:src="@drawable/rank4"></ImageView>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="382dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#00ff0000"
+                        android:backgroundTint="@color/white"
+                        android:bufferType="spannable"
+                        android:text="연세대학교 의료원\n 서울특별시 서대문구 연세로 50-1"
+                        android:textColor="#878181" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#D2D5D8"
+                    android:layout_gravity="bottom"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="left">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="5dp"
+                        android:src="@drawable/rank5"></ImageView>
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="382dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#00ff0000"
+                        android:backgroundTint="@color/white"
+                        android:bufferType="spannable"
+                        android:text="혜민병원\n 서울특별시 광진구 자양로 85"
+                        android:textColor="#878181" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#D2D5D8"
+                    android:layout_gravity="bottom"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="left">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="5dp"
+                        android:src="@drawable/rank6"></ImageView>
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="382dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#00ff0000"
+                        android:backgroundTint="@color/white"
+                        android:bufferType="spannable"
+                        android:text="인제대학교 백병원\n 서울특별시 중구 마른내로 9"
+                        android:textColor="#878181" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#D2D5D8"
+                    android:layout_gravity="bottom"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="left">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="5dp"
+                        android:src="@drawable/rank7"></ImageView>
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="382dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#00ff0000"
+                        android:backgroundTint="@color/white"
+                        android:bufferType="spannable"
+                        android:text="충남대학교 병원\n 서대전광역시 중구 문화로 282"
+                        android:textColor="#878181" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#D2D5D8"
+                    android:layout_gravity="bottom"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="left">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="5dp"
+                        android:src="@drawable/rank8"></ImageView>
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="382dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#00ff0000"
+                        android:backgroundTint="@color/white"
+                        android:bufferType="spannable"
+                        android:text="차병원\n 서울특별시 강남구 논현로 566"
+                        android:textColor="#878181" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#D2D5D8"
+                    android:layout_gravity="bottom"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="left">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="5dp"
+                        android:src="@drawable/rank9"></ImageView>
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="382dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#00ff0000"
+                        android:backgroundTint="@color/white"
+                        android:bufferType="spannable"
+                        android:text="고려대학교 의료원\n 서울시 성북구 고려대로 73"
+                        android:textColor="#878181" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#D2D5D8"
+                    android:layout_gravity="bottom"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="left">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="5dp"
+                        android:src="@drawable/rank10"></ImageView>
+
+                    <Button
+                        android:id="@+id/button10"
+                        android:layout_width="382dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#00ff0000"
+                        android:backgroundTint="@color/white"
+                        android:bufferType="spannable"
+                        android:text="인하대병원\n인천광역시 중구 인항로 27"
+                        android:textColor="#878181" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>
